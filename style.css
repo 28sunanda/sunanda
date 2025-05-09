@@ -1,0 +1,128 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f8fa;
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 32px 24px;
+  border-radius: 14px;
+  box-shadow: 0 4px 32px rgba(44, 62, 80, 0.10);
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  color: #2b6777;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 2em;
+  border-left: 5px solid #52ab98;
+  padding-left: 12px;
+}
+
+h3 {
+  color: #52ab98;
+  margin-top: 1.5em;
+  font-size: 1.2em;
+}
+
+a {
+  color: #2b6777;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #52ab98;
+  text-decoration: underline;
+}
+
+ul, ol {
+  margin-top: 0.3em;
+}
+
+.project {
+  margin-bottom: 2.5em;
+  background: #f0f7fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+  padding: 20px 18px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.13);
+}
+
+.skills-list, .contact-list {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  padding-left: 0;
+  list-style: none;
+}
+
+.skills-list li, .contact-list li {
+  margin-bottom: 0.7em;
+  padding-left: 0.5em;
+  position: relative;
+}
+
+.skills-list li:before {
+  content: "•";
+  color: #52ab98;
+  position: absolute;
+  left: 0;
+}
+
+.badge, .cert {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 2px 10px;
+  font-size: 0.97em;
+  margin-right: 7px;
+  margin-bottom: 4px;
+}
+
+.badge {
+  background: #e2f0f7;
+  color: #2b6777;
+  font-weight: 500;
+}
+
+.cert {
+  background: #f9e79f;
+  color: #7d6608;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3em;
+  padding: 1.5em 0 0.5em 0;
+  color: #888;
+  font-size: 1em;
+}
+
+@media (max-width: 700px) {
+  .container { padding: 12px 2vw; }
+  .skills-list, .contact-list { columns: 1; }
+  .project { padding: 14px 3vw; }
+  h1 { font-size: 2em; }
+}
