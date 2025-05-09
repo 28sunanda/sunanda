@@ -147,6 +147,7 @@ Provided actionable, requirement-specific recommendations for technical and poli
 (vii) Enhancing logging and monitoring for both system and web application activities.
 
 (viii) Improving asset management and employee access logging.
+
 ---
 
 ## 🛠️ Skills & Tools
