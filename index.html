@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Symbol-only Theme Toggle Button -->
+  <button id="theme-toggle" class="toggle-switch" aria-label="Toggle dark/light mode">🌙</button>
   <div class="container">
     <h1>👋 Hi there, I'm Sunanda!</h1>
     <p>
@@ -136,66 +138,72 @@
       <li><span class="cert">🎯 CRISC (in progress)</span></li>
     </ul>
 
-    <!-- Contact Section -->
-    <h2>📫 Let’s Connect</h2>
-    <ul class="contact-list">
-      <li>💼 <a href="https://linkedin.com/in/sunandamandal28" target="_blank">LinkedIn</a></li>
-      <li>📧 Email: <a href="mailto:sunandamandal28@gmail.com">sunandamandal28@gmail.com</a></li>
-    </ul>
-    <footer style="text-align:center; margin-top:3em; padding:1.5em 0 0.5em 0;">
-  <a href="https://github.com/28sunanda" target="_blank" aria-label="GitHub" style="margin:0 14px; vertical-align:middle;">
-    <!-- GitHub SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-    </svg>
-  </a>
-  <a href="https://linkedin.com/in/sunanda-mandal" target="_blank" aria-label="LinkedIn" style="margin:0 14px; vertical-align:middle;">
-    <!-- LinkedIn SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
-      <path d="M8 11v5"/><path d="M8 8v.01"/><path d="M12 16v-5"/><path d="M16 16v-3a2 2 0 1 0 -4 0"/><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" stroke="currentColor" stroke-width="2" fill="none"/>
-    </svg>
-  </a>
-  <a href="https://drive.google.com/file/d/1ETxmdHnWEPX1Yqqx3Neufv8wUv3vLL15/view?usp=sharing" target="_blank" aria-label="Resume" style="margin:0 14px; vertical-align:middle;">
-    <!-- Resume SVG (simple document icon) -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
-      <rect x="4" y="2" width="16" height="20" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
-      <line x1="8" y1="6" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
-      <line x1="8" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2"/>
-      <line x1="8" y1="14" x2="12" y2="14" stroke="currentColor" stroke-width="2"/>
-    </svg>
-  </a>
-  <a href="mailto:sunandamandal28@gmail.com" aria-label="Email" style="margin:0 14px; vertical-align:middle;">
-    <!-- Mail SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
-      <rect x="2" y="4" width="20" height="16" rx="3" ry="3" stroke="currentColor" stroke-width="2" fill="none"/>
-      <polyline points="3 6 12 13 21 6" stroke="currentColor" stroke-width="2" fill="none"/>
-    </svg>
-  </a>
-</footer>
+    <!-- Education Section -->
+    <h2>🎓 Education</h2>
+    <div class="education">
+      <div class="edu-item">
+        <strong>University of Maryland</strong><br>
+        Master of Engineering (MEng), Cybersecurity<br>
+        Aug 2023 – May 2025<br>
+        <span style="font-size:0.98em; color:#00796b;">Program Representative, Graduate Student Government</span>
+      </div>
+      <div class="edu-item">
+        <strong>SRM IST Chennai</strong><br>
+        Bachelor of Technology (BTech), Software Engineering<br>
+        2017 – 2021
+      </div>
+    </div>
 
+    <!-- Footer with Icons -->
+    <footer>
+      <a href="https://github.com/28sunanda" target="_blank" aria-label="GitHub" style="margin:0 14px; vertical-align:middle;">
+        <!-- GitHub SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+        </svg>
+      </a>
+      <a href="https://linkedin.com/in/sunandamandal28" target="_blank" aria-label="LinkedIn" style="margin:0 14px; vertical-align:middle;">
+        <!-- LinkedIn SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M8 11v5"/><path d="M8 8v.01"/><path d="M12 16v-5"/><path d="M16 16v-3a2 2 0 1 0 -4 0"/><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </a>
+      <a href="https://your-resume-link.com" target="_blank" aria-label="Resume" style="margin:0 14px; vertical-align:middle;">
+        <!-- Resume SVG (simple document icon) -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+          <rect x="4" y="2" width="16" height="20" rx="2" ry="2" stroke="currentColor" stroke-width="2" fill="none"/>
+          <line x1="8" y1="6" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+          <line x1="8" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="2"/>
+          <line x1="8" y1="14" x2="12" y2="14" stroke="currentColor" stroke-width="2"/>
+        </svg>
+      </a>
+      <a href="mailto:sunandamandal28@gmail.com" aria-label="Email" style="margin:0 14px; vertical-align:middle;">
+        <!-- Mail SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24">
+          <rect x="2" y="4" width="20" height="16" rx="3" ry="3" stroke="currentColor" stroke-width="2" fill="none"/>
+          <polyline points="3 6 12 13 21 6" stroke="currentColor" stroke-width="2" fill="none"/>
+        </svg>
+      </a>
+    </footer>
   </div>
 
-  <!-- Dark Mode Toggle Script -->
+  <!-- Theme Toggle Script -->
   <script>
-    const toggleSwitch = document.createElement('button');
-    toggleSwitch.className = 'toggle-switch';
-    toggleSwitch.textContent = 'Toggle Dark Mode';
-    document.body.appendChild(toggleSwitch);
-
-    toggleSwitch.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      if(document.body.classList.contains('dark-mode')) {
-        localStorage.setItem('theme', 'dark');
-      } else {
-        localStorage.setItem('theme', 'light');
-      }
+    const toggleBtn = document.getElementById('theme-toggle');
+    function setTheme(mode) {
+      document.body.classList.toggle('dark-mode', mode === 'dark');
+      toggleBtn.textContent = mode === 'dark' ? '☀️' : '🌙';
+      toggleBtn.setAttribute('aria-label', mode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+    toggleBtn.addEventListener('click', () => {
+      const isDark = document.body.classList.toggle('dark-mode');
+      const mode = isDark ? 'dark' : 'light';
+      localStorage.setItem('theme', mode);
+      setTheme(mode);
     });
-
-    window.addEventListener('load', () => {
-      const savedTheme = localStorage.getItem('theme');
-      if(savedTheme === 'dark') {
-        document.body.classList.add('dark-mode');
-      }
+    window.addEventListener('DOMContentLoaded', () => {
+      const saved = localStorage.getItem('theme');
+      setTheme(saved === 'dark' ? 'dark' : 'light');
     });
   </script>
 </body>
