@@ -114,6 +114,21 @@ h1 {
   text-shadow: 0 0 1.5px var(--neon-cyan), 0 0 3px #00bcd4;
 }
 
+/* Fade-in/Slide-up Animation for tagline */
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fadeInUp-animation {
+  animation: fadeInUp 1.2s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both;
+}
+
 h2 {
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
   font-size: 1.4em;
