@@ -16,6 +16,42 @@
   --badge-color-dark: #b2dfdb;
 }
 
+/* Sticky Navbar */
+.navbar {
+  width: 100%;
+  background: #004d40cc;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5em 0;
+  list-style: none;
+}
+.navbar li {
+  margin: 0 16px;
+}
+.navbar a {
+  color: #e0f2f1;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.2s, background 0.2s;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+.navbar a:hover, .navbar a.active {
+  background: #00796b;
+  color: #fff;
+}
+body {
+  scroll-behavior: smooth;
+}
+
 /* Base styles */
 body {
   margin: 0;
@@ -143,6 +179,7 @@ footer {
 footer a svg {
   transition: transform 0.2s, color 0.2s;
   color: #00796b;
+  vertical-align: middle;
 }
 footer a:hover svg {
   transform: scale(1.15);
@@ -232,10 +269,6 @@ body.dark-mode .project,
 body.dark-mode .job {
   background: #263238cc;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
-}
-
-footer a svg {
-  vertical-align: middle;
 }
 
 @media (max-width: 700px) {
