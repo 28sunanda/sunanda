@@ -7,6 +7,8 @@
   <!-- Fonts for headings and body -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <!-- AOS Animate On Scroll CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +17,7 @@
   <button id="theme-toggle" class="toggle-switch" aria-label="Toggle dark/light mode">🌙</button>
 
   <!-- Cybersecurity-Inspired Sticky Navbar -->
-  <nav class="navbar">
+  <nav class="navbar" data-aos="fade-down">
     <a href="#about">About</a>
     <a href="#work">Experience</a>
     <a href="#projects">Projects</a>
@@ -26,7 +28,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <div class="container hero">
+  <div class="container hero" data-aos="fade-up">
     <h1>👋 Hi there, I'm <span class="cyber-glow">Sunanda!</span></h1>
     <p>
       <span class="badge">🌐 Cybersecurity Professional</span>
@@ -42,8 +44,8 @@
 
   <div class="container">
     <!-- About Me Section -->
-    <h2 id="about">👤 About Me</h2>
-    <p>
+    <h2 id="about" data-aos="fade-right">👤 About Me</h2>
+    <p data-aos="fade-up">
       I am a Cybersecurity Professional specializing in Governance, Risk, and Compliance (GRC) with a strong foundation in risk assessments, incident response, and supplier security management.<br><br>
       With over two years of experience at Vodafone Intelligent Solutions and a Master’s in Cybersecurity from the University of Maryland, I have successfully led global supplier risk assessments, incident investigations, and cloud security initiatives aligned with ISO 27001 and NIST standards.<br><br>
       I am passionate about helping organizations build resilient, secure, and compliant environments. I have hands-on experience with AWS and Azure cloud security, digital forensics tools, and risk management.<br><br>
@@ -51,9 +53,9 @@
     </p>
 
     <!-- Work Experience Section -->
-    <h2 id="work">💼 Work Experience</h2>
+    <h2 id="work" data-aos="fade-right">💼 Work Experience</h2>
     <div class="work-experience">
-      <div class="job">
+      <div class="job" data-aos="fade-up">
         <h3>Senior Executive – Cyber Security Consultant<br>
           <span style="font-weight:normal;">VOIS (Vodafone Intelligent Solutions)</span>
         </h3>
@@ -67,7 +69,7 @@
           <li>Collaborated with cross-functional teams (Incident Management, Secure by Design, Privacy) to ensure operational resilience and compliance with data protection regulations (GDPR, HIPAA).</li>
         </ul>
       </div>
-      <div class="job">
+      <div class="job" data-aos="fade-up" data-aos-delay="100">
         <h3>Graduate Engineer Trainee – Cyber Security Consultant<br>
           <span style="font-weight:normal;">VOIS (Vodafone Intelligent Solutions)</span>
         </h3>
@@ -82,9 +84,9 @@
 
     <!-- Projects Section -->
     <div class="cyber-divider"></div>
-    <h2 id="projects">🚀 Projects</h2>
+    <h2 id="projects" data-aos="fade-right">🚀 Projects</h2>
 
-    <div class="project">
+    <div class="project" data-aos="fade-up">
       <h3>🩺 Secure Cloud Architecture Redesign for Healthcare Infrastructure</h3>
       <ul>
         <li>Redesigned a healthcare provider’s cloud infrastructure with a focus on security, compliance (HIPAA), and scalability.</li>
@@ -94,7 +96,7 @@
       </ul>
     </div>
 
-    <div class="project">
+    <div class="project" data-aos="fade-up" data-aos-delay="100">
       <h3>🛒 Scalable & Secure E-commerce Platform on AWS</h3>
       <ul>
         <li>Designed and deployed a secure e-commerce platform using AWS EC2, RDS (Multi-AZ), WAF, CloudFront, and Auto Scaling.</li>
@@ -104,7 +106,7 @@
       </ul>
     </div>
 
-    <div class="project">
+    <div class="project" data-aos="fade-up" data-aos-delay="200">
       <h3>🔒 Security Assessment for AWS-based Microservices Architecture</h3>
       <ul>
         <li>Conducted a comprehensive security review of an AWS EKS-based microservices deployment.</li>
@@ -112,7 +114,7 @@
       </ul>
     </div>
 
-    <div class="project">
+    <div class="project" data-aos="fade-up" data-aos-delay="300">
       <h3>🛡️ Security Assessment & Incident Response Analysis for a Fictional Company</h3>
       <ul>
         <li>Performed both offensive (CTF-style pentesting) and defensive (incident response) security phases in a simulated environment.</li>
@@ -120,7 +122,7 @@
       </ul>
     </div>
 
-    <div class="project">
+    <div class="project" data-aos="fade-up" data-aos-delay="400">
       <h3>🧪 Forensic Analysis of a Suspected Malware Disk Image</h3>
       <ul>
         <li>Used Autopsy Forensics Suite to extract and analyze artifacts from a malware-infected disk image.</li>
@@ -128,7 +130,7 @@
       </ul>
     </div>
 
-    <div class="project">
+    <div class="project" data-aos="fade-up" data-aos-delay="500">
       <h3>⚡ Enhancing the Security Posture of a Fictitious Power Plant Company</h3>
       <ul>
         <li>Conducted threat modeling (STRIDE, DREAD) and infrastructure assessment for critical OT/IT systems (DCS, SCADA, ERP/MES).</li>
@@ -136,7 +138,7 @@
       </ul>
     </div>
 
-    <div class="project">
+    <div class="project" data-aos="fade-up" data-aos-delay="600">
       <h3>CMMC 2.0 Level 1 Self-Assessment for Michael Scott Paper Company</h3>
       <ul>
         <li>Led a team to assess a web application and supporting system against CMMC 2.0 Level 1 requirements.</li>
@@ -146,15 +148,15 @@
     <div class="cyber-divider"></div>
 
     <!-- Education Section -->
-    <h2 id="education">🎓 Education</h2>
+    <h2 id="education" data-aos="fade-right">🎓 Education</h2>
     <div class="education">
-      <div class="edu-item">
+      <div class="edu-item" data-aos="fade-up">
         <strong>University of Maryland</strong><br>
         Master of Engineering (MEng), Cybersecurity<br>
         Aug 2023 – May 2025<br>
         <span style="font-size:0.98em; color:#00ffe7;">Program Representative, Graduate Student Government</span>
       </div>
-      <div class="edu-item">
+      <div class="edu-item" data-aos="fade-up" data-aos-delay="100">
         <strong>SRM IST Chennai</strong><br>
         Bachelor of Technology (BTech), Software Engineering<br>
         2017 – 2021
@@ -162,8 +164,8 @@
     </div>
 
     <!-- Skills & Tools Section -->
-    <h2 id="skills">🛠️ Skills & Tools</h2>
-    <ul class="skills-list">
+    <h2 id="skills" data-aos="fade-right">🛠️ Skills & Tools</h2>
+    <ul class="skills-list" data-aos="fade-up">
       <li><b>Cloud Platforms & Security:</b> AWS (EC2, RDS, EKS, VPC, IAM, CloudFront, WAF, KMS, NAT Gateway, API Gateway, CloudWatch, Auto Scaling), Azure, Cloud Security Architecture & Assessment, Cloud Risk Management</li>
       <li><b>Security & Compliance Frameworks:</b> ISO 27001, NIST CSF, NIST SP 800-53, HIPAA, GDPR, CMMC 2.0 Level 1, Risk Management & Threat Modeling (STRIDE, DREAD), GRC, TPRM, Operational Resilience</li>
       <li><b>Penetration Testing & Vulnerability Assessment:</b> Nmap, Metasploit, Burp Suite, Network Segmentation & Firewalls (IDS/IPS, DMZ, VLANs, WAF)</li>
@@ -176,15 +178,15 @@
     </ul>
 
     <!-- Certifications Section -->
-    <h2 id="certs">📜 Certifications</h2>
-    <ul>
+    <h2 id="certs" data-aos="fade-right">📜 Certifications</h2>
+    <ul data-aos="fade-up">
       <li><span class="cert">✅ ISO 27001 Lead Auditor</span></li>
       <li><span class="cert">🎯 AWS Solutions Architect (in progress)</span></li>
       <li><span class="cert">🎯 CRISC (in progress)</span></li>
     </ul>
 
     <!-- Footer with Icons -->
-    <footer id="contact">
+    <footer id="contact" data-aos="fade-up">
       <a href="https://github.com/28sunanda" target="_blank" aria-label="GitHub" style="margin:0 14px; vertical-align:middle;">
         <!-- GitHub SVG -->
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
@@ -233,6 +235,15 @@
     window.addEventListener('DOMContentLoaded', () => {
       const saved = localStorage.getItem('theme');
       setTheme(saved === 'dark' ? 'dark' : 'light');
+    });
+  </script>
+  <!-- AOS Animate On Scroll JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-out-cubic'
     });
   </script>
 </body>
